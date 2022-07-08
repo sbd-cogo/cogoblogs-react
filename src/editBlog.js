@@ -34,7 +34,7 @@ function EditBlog(){
                 blog_title: btitle,
                 blog_desc: bdesc,
                 blog_content: bcontent,
-                blog_type: btype
+                blog_type: btype,
             }) 
             .then((navigate(-1)))
 
