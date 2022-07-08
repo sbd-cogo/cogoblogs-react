@@ -15,7 +15,7 @@ function CreateBlog() {
         blog_title: title,
         blog_desc: desc,
         blog_type: type,
-        blog_content: content, })
+        blog_content: content })
         .then(navigate(-1));
   }
 
