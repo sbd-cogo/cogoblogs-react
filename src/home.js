@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 function Home() {
     const [blogs, setBlogs] = useState();
     useEffect(() => {
@@ -21,10 +22,14 @@ function Home() {
     return(
         <div>
             {blogs && blogs.map(blog=>(
-                <div key={blog.id}>{ blog.blog_title }</div>
+                <div key={blog.id}>
+                    <h1> { blog.blog_title } </h1>
+                    <Link to={`/editBlog/${blog.id}`} >EditBlog</Link>
+                </div> 
             ))}
             <input type="text" id='blog-search'></input>
             <button id="search-btn" onClick={searchBlog}>Search</button>
+            <Link to="/createblog" >CreateBlog</Link>
         </div>
     );
 }
