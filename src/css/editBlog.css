@@ -1,0 +1,27 @@
+
+.edit-container{
+    width: 60%;
+    margin: auto 20%; 
+}
+.edit-form{
+    display: flex;
+    flex-direction: column;
+}
+.block{
+    width: 100%;
+}
+.i-area{
+    width: 100%;
+    padding: 10px;
+}
+#content{
+    padding-bottom: 40px;
+}
+.btn-block{
+    width: 100%;
+    padding-top: 20px;
+}
+.btn{
+    width: 40%;
+    padding: 20px;
+}

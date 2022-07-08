@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import './css/editBlog.css'
 
 function EditBlog(){
 
@@ -25,11 +26,7 @@ function EditBlog(){
 
 
     const makeChanges = () => {
-        // var edited_title = document.getElementById('title').value;
         console.log(btitle);
-        // var edited_desc = document.getElementById('desc').value;
-        // var edited_content = document.getElementById('content').value;
-        // var edited_blogtype = document.getElementById('blogtype').value;
 
         axios.put('http://127.0.0.1:3000/blogs/edit/'+params.id , {
                 blog_title: btitle,
@@ -46,11 +43,29 @@ function EditBlog(){
 
     return(
         <>
-            <input type="text" id="title" value={btitle} onChange={(e) => setBtitle(e.target.value)}></input>
-            <textarea id="desc" value={bdesc} onChange={(e) => setBdesc(e.target.value)} ></textarea>
-            <textarea id="content" value={bcontent} onChange={(e) => setBcontent(e.target.value)}></textarea>
-            <input type="text" id="blogtype" value={btype} onChange={(e) => setBtype(e.target.value)}></input>
-            <button onClick={submitHandler}>Make Changes</button>
+            <div className="edit-container">
+                <div className="edit-form">
+                    <div className="title-block block">
+                        <p>Title</p>
+                        <input className="i-area"  type="text" id="title" value={btitle} onChange={(e) => setBtitle(e.target.value)}></input>
+                    </div>
+                    <div className="desc-block block">
+                        <p>Description</p>
+                        <textarea className="i-area" id="desc" value={bdesc} onChange={(e) => setBdesc(e.target.value)} ></textarea>
+                    </div>
+                    <div className="content-block block">
+                        <p>Content</p>
+                        <textarea className="i-area"  id="content" value={bcontent} onChange={(e) => setBcontent(e.target.value)}></textarea>
+                    </div>
+                    <div className="type-block block">
+                        <p>Type</p>
+                        <input className="i-area" type="text" id="blogtype" value={btype} onChange={(e) => setBtype(e.target.value)}></input>
+                    </div>
+                    <div className="block btn-block">
+                        <button className="btn" onClick={makeChanges}>Make Changes</button>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
