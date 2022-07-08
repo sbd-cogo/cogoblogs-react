@@ -2,9 +2,10 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import './css/editBlog.css'
+import {useNavigate} from 'react-router-dom';
 
 function EditBlog(){
-
+    let navigate= useNavigate();
     const [blog, setBlog] = useState();
     const [btitle, setBtitle] = useState();
     const [bdesc, setBdesc] = useState();
@@ -22,6 +23,7 @@ function EditBlog(){
             setBdesc(data.blog_desc);
             setBcontent(data.blog_content);
             setBtype(data.blog_type)})
+    
     }, [])
 
 
@@ -33,7 +35,9 @@ function EditBlog(){
                 blog_desc: bdesc,
                 blog_content: bcontent,
                 blog_type: btype
-            })
+            }) 
+            .then((navigate(-1)))
+
     }
 
     const submitHandler = (e) => {
