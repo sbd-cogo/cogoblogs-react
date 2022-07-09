@@ -40,12 +40,12 @@ function Login() {
                             <input type="email" onChange={(e) => setUseremail(e.target.value)} className="ib" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
                             <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
-                        <div className="tb tb-login">
+                        <div className="tb tb-login tb-password">
                             <label for="exampleInputPassword1">Password</label>
                             <input type="password" onChange={(e) => setUserpassword(e.target.value)} className="ib" id="exampleInputPassword1" placeholder="Password" />
                         </div>
                         <div className="tb">
-                            <button type="button" className="ib" onClick={() => login()}>Login</button>
+                            <button type="button" className="ib ib-btn" onClick={() => login()}>Login</button>
                         </div>
                 </div>
             </div>

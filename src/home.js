@@ -19,7 +19,7 @@ function Home() {
        
         fetch("http://127.0.0.1:3000/blogs/search/" + blogSearched)
         .then((response) => response.json())
-        .then((data) => {setBlogs([data]); console.log(data)});
+        .then((data) => {setBlogs(data); console.log(data)});
     }
 
     

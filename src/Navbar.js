@@ -12,11 +12,11 @@ export default function Navbar() {
           <p className='fw'>BLOGS</p>
         </Link>
         <div className='right-nav'>
-            <Link to='/createBlog' className='fw'>+BLOG</Link>
-            <Link to='/' className='fw'>HOME</Link>
-            <Link to='/signup' >SIGNUP</Link>
-            <Link to='/login' >LOGIN</Link>
-            <Link to='/about' className='fw'>ABOUT</Link>
+            <Link to='/createBlog' className='fw link-hover'>+BLOG</Link>
+            <Link to='/' className='fw link-hover'>HOME</Link>
+            <Link to='/signup' className='fw link-hover'>SIGNUP</Link>
+            <Link to='/login' className='fw link-hover' >LOGIN</Link>
+            <Link to='/about' className='fw link-hover'>ABOUT</Link>
         </div>
       </div>
     </nav>

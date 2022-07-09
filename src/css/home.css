@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -13,21 +15,24 @@
     --light-green: #7BE395;
     --white: #CFF4D2;
 }
-/* .fw{
-    font-weight: bold;
-} */
+
 
 body{
     width: 100%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;    
+    font-weight: 400;
     font-size: 16px;
     color: white;
+}
+.fw{
+    font-weight: 500;
 }
 
 /* navbar */
 .navbar{
     /* height: 100px; */
     margin: 20px 30px;
+    border-radius: 10px;
     border-bottom: 4px solid var(--green);
     box-shadow: 5px 4px 5px var(--darker);
 }
@@ -54,6 +59,10 @@ body{
     display: flex;
     justify-content: space-evenly;
     color: var(--darker);
+}
+
+.link-hover:hover{
+    transform: scale(1.2);
 }
 
 /* home page */
@@ -130,6 +139,7 @@ body{
 
 
 
+
 /* View Blog Page */
 .view-page-img{
     height: 300px;
@@ -178,7 +188,7 @@ body{
 .login-form{
     width: fit-content;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 30px;
     border: 2px solid var(--darker);
     box-shadow: 0 0 10px var(--darker);
 }
@@ -189,8 +199,6 @@ body{
 .login-content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .tb{
     padding: 10px;
@@ -203,4 +211,15 @@ body{
 .tb-login{
     display: flex;
     flex-direction: column;
+    height: 90px;
+    justify-content: space-between;
 }
+.tb-password{
+    height: 70px;
+    /* justify-content: space-around; */
+}
+.ib-btn{
+    background-color: var(--white);
+}
+
+/* Create Blog */

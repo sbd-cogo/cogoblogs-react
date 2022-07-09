@@ -26,7 +26,7 @@ function SignUp() {
                 <h2 className="text-center">Sign Up</h2>
                     <div className="login-content">
                         <div className="tb">
-                            <input type="text" onChange={(e) => setUsername(e.target.value)} required className="ib" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name" />
+                            <input type="text" onChange={(e) => setUsername(e.target.value)} required className="ib" id="exampleInputName" aria-describedby="emailHelp" placeholder="Enter your name" />
                         </div>
                         <div className="tb">
                             <input type="email" onChange={(e) => setUseremail(e.target.value)} required className="ib" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
@@ -35,7 +35,7 @@ function SignUp() {
                             <input type="password" className="ib" required id="exampleInputPassword1" onChange={(e) => setUserpassword(e.target.value)}placeholder="Set Your Password" />
                         </div>
                         <div className="tb">
-                            <button type="submit" className="ib" onClick={() => signup()}>Sign up</button>
+                            <button type="submit" className="ib ib-btn" onClick={() => signup()}>Sign up</button>
                         </div>
                     </div>
             </div>
