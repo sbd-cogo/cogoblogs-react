@@ -9,7 +9,9 @@ import EditBlog from "./editBlog.js";
 import Navbar from "./Navbar.js";
 import ViewBlog from "./ViewBlog.js";
 // import Details from "./moviedetails.js";
-// import "./style.css"
+import "./css/home.css"
+import SignUp from "./Signup.js";
+import Login from "./Login.js";
 
 function App(){
     return(
@@ -21,6 +23,8 @@ function App(){
             <Route path="/createblog" element={<CreateBlog />}></Route>
             <Route path="/editblog/:id" element={<EditBlog />}></Route>
             <Route path="/viewblog/:id" element={<ViewBlog />}></Route>
+            <Route path="/signup" element={<SignUp />}></Route>
+            <Route path="/login" element={<Login />}></Route>
         </Routes>
         </BrowserRouter>
         

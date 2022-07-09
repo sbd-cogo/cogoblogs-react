@@ -53,6 +53,7 @@ return (
               placeholder="Blog Content"
             ></input>
           </div>
+          
           {/* <div className="form-group">
             <button className="btn" onClick={addData}>Upload Image</button>
           </div> */}

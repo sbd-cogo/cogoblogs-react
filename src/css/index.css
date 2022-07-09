@@ -1,4 +1,4 @@
-
+/* 
 :root {
     --primaryLightColor: #d4e6a5;
     --primaryColor: #476a2e;
@@ -19,13 +19,13 @@
     --smallWidth: 85vw;
     --maxWidth: 40rem;
     --fullWidth: 1170px;
-  }
+  } */
   /* 
   ====== 
   Global Styles 
   ======
   */
-  * {
+  /* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -70,7 +70,7 @@
   Buttons 
   ======
   */
-  .btn,
+  /* .btn,
   .btn-white,
   .btn-primary {
     text-transform: uppercase;
@@ -121,12 +121,13 @@
   .btn-details:hover {
     background: var(--primaryLightColor);
     border-color: var(--primaryLightColor);
-  }
+  } */
   /* 
   ====== 
   Navbar
   ======
   */
+  /*
   .navbar {
     background: var(--mainWhite);
     height: 5rem;
@@ -163,13 +164,13 @@
   }
   .logo {
     width: 12rem;
-  }
+  } */
   /* 
   ====== 
   About
   ======
   */
-  .about-section {
+  /* .about-section {
     width: var(--smallWidth);
     max-width: var(--maxWidth);
     margin: 0 auto;
@@ -178,12 +179,13 @@
     line-height: 2rem;
     font-weight: 400;
     letter-spacing: 2px;
-  }
+  } */
   /* 
   ====== 
   Error
   ======
   */
+  /* 
   .error-page {
     display: flex;
     justify-content: center;
@@ -253,4 +255,4 @@
       height: 5em;
     }
   }
-  
+   */

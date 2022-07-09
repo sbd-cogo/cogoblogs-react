@@ -7,20 +7,17 @@ export default function Navbar() {
   return (
     <nav className='navbar'>
       <div className='nav-center'>
-        <Link to='/'>
-        <p><img height={50} width={0.1} src={logo} alt="" classsName="logo"></img>BLOGS</p>
+        <Link to='/' className='left-nav'>
+          <img src={logo} alt="logo" className='logo-img' />
+          <p className='fw'>BLOGS</p>
         </Link>
-        <ul className='nav-links'>
-            <li>
-            <Link to='/createBlog'>+Blog</Link>
-            </li>
-          <li>
-            <Link to='/'>home</Link>
-          </li>
-          <li>
-            <Link to='/about'>about</Link>
-          </li>
-        </ul>
+        <div className='right-nav'>
+            <Link to='/createBlog' className='fw'>+BLOG</Link>
+            <Link to='/' className='fw'>HOME</Link>
+            <Link to='/signup' >Signup</Link>
+            <Link to='/login' >Login</Link>
+            <Link to='/about' className='fw'>ABOUT</Link>
+        </div>
       </div>
     </nav>
   )
