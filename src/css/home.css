@@ -19,7 +19,7 @@
 
 body{
     width: 100%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
     color: white;
 }
@@ -167,4 +167,40 @@ body{
 }
 .edit-btn{
     text-align: center;
+}
+
+/* Signup page */
+.login-block{
+    display: flex;
+    justify-content: center;
+    margin-top: 12%;
+}
+.login-form{
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid var(--darker);
+    box-shadow: 0 0 10px var(--darker);
+}
+.text-center{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.login-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tb{
+    padding: 10px;
+}
+.ib{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-color: var(--light-green);
+}
+.tb-login{
+    display: flex;
+    flex-direction: column;
 }

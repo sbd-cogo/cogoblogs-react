@@ -30,27 +30,26 @@ function Login() {
         
     }
     return (
-        <>
-            <h2 className="text-center m-2">Login Form</h2>
-            
+        <div className="login-block">
             <div className="login-form">
+                <h2 className="text-center">Login Form</h2>
                 <div className="login-content">
-                    <form>
-                        <div className="form-group m-3">
+                        <div className="tb tb-login">
                         {error  && <><h5>{error}</h5></>}
                             <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" onChange={(e) => setUseremail(e.target.value)} className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+                            <input type="email" onChange={(e) => setUseremail(e.target.value)} className="ib" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
                             <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
                         </div>
-                        <div className="form-group m-3">
+                        <div className="tb tb-login">
                             <label for="exampleInputPassword1">Password</label>
-                            <input type="password" onChange={(e) => setUserpassword(e.target.value)} className="form-control" id="exampleInputPassword1" placeholder="Password" />
+                            <input type="password" onChange={(e) => setUserpassword(e.target.value)} className="ib" id="exampleInputPassword1" placeholder="Password" />
                         </div>
-                        <button type="button" className="btn btn-primary m-4" onClick={() => login()}>Login</button>
-                    </form>
+                        <div className="tb">
+                            <button type="button" className="ib" onClick={() => login()}>Login</button>
+                        </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 export default Login

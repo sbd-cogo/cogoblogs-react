@@ -1,12 +1,13 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useEffect, useState } from "react";
-import { useParams } from "react-router";
+import { Navigate, useParams } from "react-router";
 import blog_img from './green-img.webp';
 import axios from 'axios';
 
 function ViewBlog(){
     var params = useParams();
     const [blog, setBlog] = useState()
+    let navigate = useNavigate();
 
     useEffect(() => {
         fetch('http://127.0.0.1:3000/blogs/view/'+params.id)
@@ -20,6 +21,7 @@ function ViewBlog(){
         .then(res => {
             console.log(res)
         })
+        .then(navigate(-1));
         const update_blog_list = blog.filter(blog => blog.id !== id);  
         setBlog(update_blog_list);
 

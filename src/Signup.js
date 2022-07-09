@@ -21,25 +21,25 @@ function SignUp() {
         
     }
     return (
-        <>
+        <div className="login-block">
             <div className="login-form">
-            <h2 className="text-center m-2 text-white ">Sign Up Form</h2>
-                <div className="login-content">
-                    <form>
-                    <div className="form-group m-3">
-                            <input type="email" onChange={(e) => setUsername(e.target.value)} required className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name" />
+                <h2 className="text-center">Sign Up</h2>
+                    <div className="login-content">
+                        <div className="tb">
+                            <input type="text" onChange={(e) => setUsername(e.target.value)} required className="ib" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your name" />
                         </div>
-                        <div className="form-group m-3">
-                            <input type="email" onChange={(e) => setUseremail(e.target.value)} required className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
+                        <div className="tb">
+                            <input type="email" onChange={(e) => setUseremail(e.target.value)} required className="ib" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
                         </div>
-                        <div className="form-group m-3">
-                            <input type="password" className="form-control" required id="exampleInputPassword1" onChange={(e) => setUserpassword(e.target.value)}placeholder="Set Your Password" />
+                        <div className="tb">
+                            <input type="password" className="ib" required id="exampleInputPassword1" onChange={(e) => setUserpassword(e.target.value)}placeholder="Set Your Password" />
                         </div>
-                        <button type="submit" className="btn btn-primary m-4" onClick={() => signup()}>Sign up</button>
-                    </form>
-                </div>
+                        <div className="tb">
+                            <button type="submit" className="ib" onClick={() => signup()}>Sign up</button>
+                        </div>
+                    </div>
             </div>
-        </>
+        </div>
     )
 }
 export default SignUp

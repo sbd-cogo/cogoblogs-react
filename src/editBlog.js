@@ -15,7 +15,7 @@ function EditBlog(){
     
     
     useEffect(() => {
-        fetch('http://localhost:3000/blogs/ids/'+params.id)
+        fetch('http://localhost:3000/blogs/view/'+params.id)
         .then((response) => (response.json()))
         .then((data) => {
             setBlog(data); 
@@ -38,11 +38,6 @@ function EditBlog(){
             }) 
             .then((navigate(-1)))
 
-    }
-
-    const submitHandler = (e) => {
-        e.preventDefault();
-        makeChanges();
     }
 
     return(

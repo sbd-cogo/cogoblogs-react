@@ -14,8 +14,8 @@ export default function Navbar() {
         <div className='right-nav'>
             <Link to='/createBlog' className='fw'>+BLOG</Link>
             <Link to='/' className='fw'>HOME</Link>
-            <Link to='/signup' >Signup</Link>
-            <Link to='/login' >Login</Link>
+            <Link to='/signup' >SIGNUP</Link>
+            <Link to='/login' >LOGIN</Link>
             <Link to='/about' className='fw'>ABOUT</Link>
         </div>
       </div>
